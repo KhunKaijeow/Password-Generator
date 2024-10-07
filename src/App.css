@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+:root {
+  --color-text: #fff;
+  --color-background: #1a1a1a;
+  --color-input: #565656;
+  --color-button: #02ee14;
+}
+
+root {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 12px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container .password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-input);
+  padding: 0.5rem 1rem;
+  
+}
+
+.container .password-container input {
+  width: 70%;
+  padding: 0.5rem;
+  background-color: var(--color-input);
+  border: none;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.container .password-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  border-radius: 0;
+  background-color: var(--color-button);
+}
+
+.password-options-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  background-color: var(--color-input);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  gap: 1rem;
+}
+
+.password-options-container .character-length {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.password-options-container .character-length  input[type="range"] {
+  accent-color: var(--color-background);
+}
+
+.password-options-container .password-option {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.password-options-container .password-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--color-button);
+}
+
+.password-options-container .password-strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  height: 1.5rem;
+  font-size: 15px;
+}
+
+.password-options-container .password-strength input {
+  width: 20%;
+  padding: 0.5rem;
+  border: none;
+}
+
+.password-options-container .generate-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.password-options-container .generate-password button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  border-radius: 0;
+  background-color: var(--color-button);
+  width: 100%;
+}
